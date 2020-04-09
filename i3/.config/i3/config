@@ -1,6 +1,8 @@
 # Win key is $mod
 set $mod Mod4
 
+exec --no-startup-id feh --bg-scale ~/.config/wallpapers/current
+
 # start a terminal
 bindsym $mod+Return exec st
 
