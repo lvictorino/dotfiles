@@ -6,6 +6,14 @@ exec --no-startup-id feh --bg-scale ~/.config/wallpapers/current
 # start a terminal
 bindsym $mod+Return exec st
 
+# remove window title bar and borders
+for_window [class="^.*"] border pixel 0
+
+# set gaps 
+gaps inner 20
+gaps vertical 80
+gaps horizontal 80
+
 ##############################################################################
 
 # Font for window titles. Will also be used by the bar unless a different font
