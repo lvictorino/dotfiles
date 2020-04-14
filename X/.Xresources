@@ -1,0 +1,54 @@
+Xft.dpi:       130
+Xft.antialias: true
+Xft.hinting:   true
+Xft.rgba:      rgb
+Xft.autohint:  false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+
+st.font:			FuraCode Nerd Font Mono-10
+st.bold_font:			1 
+st.background:			#131415
+st.foreground:			#A3BAD0
+st.cursorColor:			#8d9b53
+st.termname:			xterm-256color
+st.shell:			/bin/sh
+st.bellvolume:			100
+st.tabspaces:			8
+st.chscale:			1.0
+st.cwscale:			1.0
+
+!! #242526 dark brown
+!! #436073 dark blue
+!! #8A9EA6 light blue
+!! #92A0A6 grey
+!! #BFBDB0 clay
+!! #8C8C80 alt clay
+!! #736565 brown
+!! #918080 light brown
+
+!! Background
+st.color0:			#242526
+st.color8:			#00ff00
+!! clay
+st.color1:			#8C8C80
+st.color9:			#BFBDB0
+!! green
+st.color2:			#7B8C58
+st.color10:			#9DB270
+!! brown
+st.color3:			#736565
+st.color11:			#918080
+!! gray
+st.color4:			#66757A
+st.color12:			#8A9EA6
+!! purple
+st.color5:			#7b5E7D
+st.color13:			#9C77B2
+!! blue
+st.color6:			#436073
+st.color14:			#6694B0
+!! Foreground
+st.color7:			#8A9EA6
+st.color15:			#b8b8c8
