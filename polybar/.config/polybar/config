@@ -1,0 +1,107 @@
+[colors]
+transparent                   = #00000000
+background                    = #0F1C32
+foreground                    = #242526
+foreground-light	      = #BFBD90
+alert                         = #DAD9D4
+
+[settings]
+screenchange-reload           = true
+pseudo-transparency           = true
+wm-restack                    = i3
+override-redirect             = true
+
+[global/wm]
+margin-top                    = 0
+margin-bottom                 = 0
+
+[bar/base]
+locale                        = en_US.UTF-8
+dpi                           = 130
+
+[bar/top]
+inherit = bar/base
+height = 50
+width = 100%
+bottom = false
+fixed-center = true
+modules-right = date
+
+padding-right = 8
+
+background                    = ${colors.transparent}
+foreground                    = ${colors.foreground-light}
+font-0                        = Fira Mono:style=Regular:size=8;2
+font-1                        = Material Icons:style=Regular:size=10;2
+
+[bar/bottom]
+inherit			      = bar/base
+height 			      = 50
+width 			      = 100%
+bottom 			      = true
+
+fixed-center 		      = true
+modules-center 		      = i3
+modules-right		      = eth wlan battery
+
+module-margin-right 	      = 3
+padding-right 		      = 5
+
+background                    = ${colors.transparent}
+foreground                    = ${colors.foreground-light}
+font-0                        = Fira Mono:style=Regular:size=10;2
+font-2                        = Material Icons:style=Regular:size=8;2
+font-1			      =	siji:size=10:antialias=true;2
+
+## MODULES
+[module/wlan]
+type = internal/network
+interface = wlp2s0
+interval = 3.0
+label-connected = 
+
+[module/eth]
+type = internal/network
+interface = enp0s31f6
+interval = 3.0
+label-connected = 
+format-disconnected =
+
+[module/battery]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = AC
+poll-interval = 15
+
+format-discharging = <ramp-capacity>
+
+ramp-capacity-0 =  
+ramp-capacity-1 =  
+ramp-capacity-2 =  
+
+[module/i3]
+type                          = internal/i3
+
+label-focused                 = 
+label-focused-padding         = 1
+label-focused-foreground      = ${colors.foreground-light}
+
+label-unfocused                = 
+label-unfocused-padding        = 1
+label-unfocused-foreground     = ${colors.foreground-light}
+
+label-urgent                  = %index%!
+label-urgent-background       = ${colors.alert}
+label-urgent-padding          = 1
+
+label-empty                   = 
+label-empty-padding           = 1
+label-empty-foreground        = ${colors.foreground-light}
+
+[module/date]
+type                          = internal/date
+interval                      = 5
+date                          = "%A %d %B"
+time                          = %H%M
+label                         = %date%, %time%
