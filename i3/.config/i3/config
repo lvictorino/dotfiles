@@ -4,7 +4,6 @@ set $mod Mod4
 exec --no-startup-id feh --bg-scale ~/.config/wallpapers/current
 exec --no-startup-id /usr/bin/dunst
 exec --no-startup-id /usr/bin/picom
-exec --no-startup-id polybar top
 exec --no-startup-id polybar bottom
 
 # start a terminal
@@ -15,7 +14,7 @@ for_window [class="^.*"] border pixel 0
 
 # set gaps 
 gaps inner 20
-gaps top 30
+gaps top 80
 gaps bottom 30
 gaps horizontal 80
 

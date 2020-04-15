@@ -19,21 +19,6 @@ margin-bottom                 = 0
 locale                        = en_US.UTF-8
 dpi                           = 130
 
-[bar/top]
-inherit = bar/base
-height = 50
-width = 100%
-bottom = false
-fixed-center = true
-modules-right = date
-
-padding-right = 8
-
-background                    = ${colors.transparent}
-foreground                    = ${colors.foreground-light}
-font-0                        = Fira Mono:style=Regular:size=8;2
-font-1                        = Material Icons:style=Regular:size=10;2
-
 [bar/bottom]
 inherit			      = bar/base
 height 			      = 50
@@ -41,15 +26,17 @@ width 			      = 100%
 bottom 			      = true
 
 fixed-center 		      = true
+modules-left		      = date
 modules-center 		      = i3
 modules-right		      = eth wlan battery
 
 module-margin-right 	      = 3
 padding-right 		      = 5
+padding-left		      = 5
 
 background                    = ${colors.transparent}
 foreground                    = ${colors.foreground-light}
-font-0                        = Fira Mono:style=Regular:size=10;2
+font-0                        = Fira Mono:style=Regular:size=8;2
 font-2                        = Material Icons:style=Regular:size=8;2
 font-1			      =	siji:size=10:antialias=true;2
 
@@ -100,8 +87,6 @@ label-empty-padding           = 1
 label-empty-foreground        = ${colors.foreground-light}
 
 [module/date]
-type                          = internal/date
-interval                      = 5
-date                          = "%A %d %B"
-time                          = %H%M
-label                         = %date%, %time%
+type                          = custom/script
+interval		      = 5
+exec			      = ~/.config/polybar/scripts/datetime-en-literal.sh
