@@ -4,7 +4,7 @@ set $mod Mod4
 #############
 ##### STARTUP
 
-exec --no-startup-id feh --bg-scale ~/.config/wallpapers/current		# wallpaper
+exec --no-startup-id betterlockscreen -w dim ~/.config/wallpapers/current		# wallpaper
 exec --no-startup-id /usr/bin/dunst 						# notifications
 exec --no-startup-id /usr/bin/picom 						# composer
 exec --no-startup-id polybar bottom						# polybar
@@ -14,6 +14,14 @@ exec --no-startup-id polybar bottom						# polybar
 
 # Start a terminal
 bindsym $mod+Return exec st
+
+# Lock session
+bindsym $mod+ctrl+l exec --no-startup-id betterlockscreen -l
+bindsym $mod+ctrl+s exec --no-startup-id systemctl suspend
+
+# Print screen
+bindsym Print exec scrot '%Y%m%d_%H%M%S_$wx$h.png' -e 'mv $f ~/Pictures/shots/'		#simple screenshot
+bindsym --release $mod+Print exec scrot -s '%Y%m%d_%H%M%S_$wx$h-region.png' -e 'mv $f ~/Pictures/shots/' #region screenshot
 
 # Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset 'Master' 5%+	#increase
@@ -109,7 +117,8 @@ gaps horizontal 80
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
