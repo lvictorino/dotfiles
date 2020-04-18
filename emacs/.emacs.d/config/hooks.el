@@ -15,3 +15,8 @@
     )
   )
 (add-hook 'after-save-hook 'xresources-reload-hook)
+
+;; Linum is only hooked on markdown, programming and org
+(add-hook 'prog-mode-hook 'linum-mode)
+(add-hook 'markdown-mode-hook 'linum-mode)
+(add-hook 'org-mode-hook 'linum-mode)
