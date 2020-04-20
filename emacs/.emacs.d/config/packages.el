@@ -40,3 +40,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;; UTILS
 
+;; Allows package testing
+(use-package try
+  :ensure t)
