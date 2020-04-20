@@ -62,8 +62,8 @@ bindsym $mod+Shift+semicolon move right
 bindsym $mod+Shift+Right move right
 
 # Split orientation
-bindsym $mod+h split h				#horizontal
-bindsym $mod+v split v				#vertical
+bindsym $mod+h exec i3-msg split h				#horizontal
+bindsym $mod+v exec i3-msg split v				#vertical
 
 # Switch to workspace
 bindsym $mod+1 workspace number $ws1
