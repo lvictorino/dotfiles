@@ -39,7 +39,7 @@ floating_modifier $mod
 bindsym $mod+Shift+q kill
 
 # Start program launcher
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec rofi -show run
 
 # Change focus
 bindsym $mod+j focus left
