@@ -20,7 +20,9 @@
  '(window-divider-last-pixel ((t (:background "#242526" :foreground "#242526"))))
  '(fringe ((t (:background "#242526"))))
  '(linum ((t (:foreground "#736565"))))
+ '(hl-line ((t (:background "#191919"))))
  )
+
 
 ;; Custom variables
 (custom-set-variables
@@ -29,6 +31,7 @@
  '(package-selected-packages (quote (avy counsel org dash)))
  '(tool-bar-mode nil)
  '(scroll-bar-mode nil)
+ '(global-hl-line-mode 1)
  )
 
 (setq linum-format "  %d   ")
