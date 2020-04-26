@@ -46,23 +46,15 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show run
 
 # Change focus
-bindsym $mod+j focus left
 bindsym $mod+Left focus left
-bindsym $mod+k focus down
 bindsym $mod+Down focus down
-bindsym $mod+l focus up
 bindsym $mod+Up focus up
-bindsym $mod+semicolon focus right
 bindsym $mod+Right focus right
 
 # Move focused window
-bindsym $mod+Shift+j move left
 bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+k move down
 bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+l move up
 bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+semicolon move right
 bindsym $mod+Shift+Right move right
 
 # Split orientation
