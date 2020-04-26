@@ -20,7 +20,7 @@ bindsym $mod+Return exec st
 bindsym $mod+Tab    exec emacsclient -c
 
 # Lock session
-bindsym $mod+ctrl+l exec --no-startup-id betterlockscreen -l
+bindsym $mod+l exec --no-startup-id betterlockscreen -l
 bindsym $mod+ctrl+s exec --no-startup-id systemctl suspend
 
 # Print screen
