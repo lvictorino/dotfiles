@@ -1,0 +1,14 @@
+* L0L's dotfiles
+
+*WARNING*: This configuration is requires [[https://www.gnu.org/software/stow/][GNU Stow]] to be installed.
+
+This configuration will impact the following paths:
+- Emacs (~/.emacs.d)
+- X (~/.Xresources)
+- Polybar (~/.config/polybar)
+- i3 (~/.config/i3)
+- Dunst (~/.config/dunst)
+- Zsh (~/.zshrc)
+
+** TODO
+- Rice up Rofi
