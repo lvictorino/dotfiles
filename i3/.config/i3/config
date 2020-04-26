@@ -8,12 +8,16 @@ exec --no-startup-id betterlockscreen -w dim ~/.config/wallpapers/current	# wall
 exec --no-startup-id /usr/bin/dunst 						# notifications
 exec --no-startup-id /usr/bin/picom 						# composer
 exec --no-startup-id polybar bottom						# polybar
+exec --no-startup-id emacs --daemon						# emacs server
 
 ##############
 ##### BINDINGS
 
 # Start a terminal
 bindsym $mod+Return exec st
+
+# Start emacs
+bindsym $mod+Tab    exec emacsclient -c
 
 # Lock session
 bindsym $mod+ctrl+l exec --no-startup-id betterlockscreen -l
