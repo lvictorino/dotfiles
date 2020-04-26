@@ -10,8 +10,11 @@ This configuration will impact the following paths:
 - Dunst (~/.config/dunst)
 - Zsh (~/.zshrc)
 
-** TODO
+** Todo
 - Rice up Rofi
 
 ** Credits
 - [[https://unsplash.com/photos/ED46BEmxlbw][Wallpaper]] by [[https://unsplash.com/@tom32i][Thomas Jarrand]].
+
+** Preview
+[[./preview.png]]
