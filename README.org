@@ -12,3 +12,6 @@ This configuration will impact the following paths:
 
 ** TODO
 - Rice up Rofi
+
+** Credits
+- [[https://unsplash.com/photos/ED46BEmxlbw][Wallpaper]] by [[https://unsplash.com/@tom32i][Thomas Jarrand]].
