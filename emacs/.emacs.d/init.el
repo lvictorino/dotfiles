@@ -1,5 +1,12 @@
 (setq ring-bell-function 'ignore) ;; removes bell
 
+;; Save temp files to ~/.emacs.d/backups
+(make-directory "~/.emacs.d/backups" :parents)
+(setq backup-directory-alist
+      '(("." . "~/.emacs.d/backups/")))
+(setq auto-save-file-name-transforms
+      `((".*" ,"~/.emacs.d/backups/" t)))
+
 ;; Package manager settings
 (require 'package)
 (setq package-enable-at-startup nil)
@@ -15,3 +22,7 @@
 (load-file "~/.emacs.d/config/hooks.el")
 (load-file "~/.emacs.d/config/packages.el")
 (load-file "~/.emacs.d/config/theme.el")
+
+
+
+
