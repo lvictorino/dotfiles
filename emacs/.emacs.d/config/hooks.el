@@ -1,8 +1,8 @@
 (defun emacs-config-reload-hook()
   "Reload ~/.emacs.d/init.el on save."
-  (if (cl-search ".emacs.d/" (file-name-as-directory buffer-file-name)) 1)
-    (load-file "~/.emacs.d/init.el")
-)
+  (if (cl-search ".emacs.d/" (file-name-as-directory buffer-file-name))
+      (load-file "~/.emacs.d/init.el"))
+  )
 (add-hook 'after-save-hook 'emacs-config-reload-hook)
 
 (defun i3-reload-hook()
